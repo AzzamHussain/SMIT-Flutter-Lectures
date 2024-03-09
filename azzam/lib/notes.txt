@@ -1,0 +1,5 @@
+           //container or sized box may kea different hay sized box spacing k liye use hota hay
+           // column may main axis alignment top to bottom hoti hay
+           //cross axis alignment left to right
+           // row may main axis left to right
+           //row may cross axis alignment top to bottom

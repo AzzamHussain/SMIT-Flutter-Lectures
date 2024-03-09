@@ -5,55 +5,55 @@ class loginview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Row(
-        children: [
-          Expanded(
-            child: Container(color: Colors.blueGrey),
-          ),
-          Expanded(
-            child: Container(
-              color: Colors.deepOrangeAccent,
-            ),
-          )
-        ],
-      ),
-
-      // appBar: AppBar(
-      //   backgroundColor: Colors.amber,
-      //   title: Text("data"),
-      // ),
-      // body: Center(
-      //   child: Container(
-      //     alignment: Alignment(-1, -1),
-      //     width: 300,
-      //     height: 150,
-      //     decoration: BoxDecoration(
-      //       border: Border.all(
-      //         color: Colors.black,
-      //         width: 5,
-      //       ), //border all
-      //   ,    borderRadius: BorderRadius.circular(20),
-      //     ),
-      //     child: Text(
-      //       "Hello",
-      //       style: TextStyle(fontSize: 32),
-      //     ), //Text
-      //   ), //container
-      // )
-    );
-    //   body: Container(
-    //     color: Colors.red,
-    //     height: 150,
-    //     width: 200,
-    //     child: Text('Azzam'),
+    // return new MaterialApp(
+    //   title: "APP",
+    //   home: new HomePage(),
+    //   theme: new ThemeData(
+    //     primarySwatch: Colors.grey,
+    //     brightness: ColorScheme.highContrastDark(),
+    //     //accentColor: Colors.red
     //   ),
     // );
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.grey,
+        title: Text("data"),
+      ),
+      body: Container(
+        color: Colors.amber,
+        width: 100,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
 
-//     body: Container(
-// color: Colors.red,
-// height: 150,
-// width: 200,);
-    //return const Placeholder();
+          // mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.yellow,
+            ),
+            Row(
+              children: [
+                Container(
+                  color: Colors.red,
+                  height: 100,
+                  width: 100,
+                ),
+                Container(
+                  color: Colors.black,
+                  height: 100,
+                  width: 100,
+                ),
+              ],
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.yellow,
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
