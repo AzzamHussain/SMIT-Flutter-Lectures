@@ -3,3 +3,15 @@
            //cross axis alignment left to right
            // row may main axis left to right
            //row may cross axis alignment top to bottom
+
+           ---------------------------------------------------------------------------
+             //    return new MaterialApp(
+        //   title: "APP",
+        //   home: new HomePage(),
+        //   theme: new ThemeData(
+        //     primarySwatch: Colors.grey,
+        //     brightness: ColorScheme.highContrastDark(),
+        //     //accentColor: Colors.red
+        //   ),
+        // );
+        // //r

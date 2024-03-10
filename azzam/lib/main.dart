@@ -6,22 +6,23 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key});
 
+  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: loginview()
-        //    return new MaterialApp(
-        //   title: "APP",
-        //   home: new HomePage(),
-        //   theme: new ThemeData(
-        //     primarySwatch: Colors.grey,
-        //     brightness: ColorScheme.highContrastDark(),
-        //     //accentColor: Colors.red
-        //   ),
-        // );
-        // //r
-        );
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Azzam"),
+        ),
+        body: const loginview(),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {
+            // Define the action for the floating action button here
+          },
+          child: const Icon(Icons.add),
+        ),
+      ),
+    );
   }
 }
-
-//scaffold pori scree k liye hay adhi screen k liye nh
