@@ -1,56 +1,38 @@
 import 'package:flutter/material.dart';
 
-class loginview extends StatelessWidget {
-  const loginview({super.key});
+class counterView extends StatefulWidget {
+  const counterView({super.key});
 
   @override
+  State<counterView> createState() => _counterViewState();
+}
+
+class _counterViewState extends State<counterView> {
+  int counter = 0;
+  @override
   Widget build(BuildContext context) {
-    // return new MaterialApp(
-    //   title: "APP",
-    //   home: new HomePage(),
-    //   theme: new ThemeData(
-    //     primarySwatch: Colors.grey,
-    //     brightness: ColorScheme.highContrastDark(),
-    //     //accentColor: Colors.red
-    //   ),
-    // );
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey,
-        title: Text("data"),
+        backgroundColor: Colors.amber,
+        title: const Text("counter App"),
       ),
-      body: Container(
-        color: Colors.amber,
-        width: 100,
+      body: Center(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-
-          // mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.yellow,
+            Text(
+              '$counter',
+              style: TextStyle(fontSize: 40),
             ),
-            Row(
-              children: [
-                Container(
-                  color: Colors.red,
-                  height: 100,
-                  width: 100,
-                ),
-                Container(
-                  color: Colors.black,
-                  height: 100,
-                  width: 100,
-                ),
-              ],
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.yellow,
-            ),
+            ElevatedButton(
+                onPressed: () {
+                  setState(() {
+                    //setState tab uswaqt use kartay jb screen mai koi update karni ho
+                    counter++;
+                  });
+                  print(counter);
+                },
+                child: const Text("add"))
           ],
         ),
       ),
