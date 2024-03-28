@@ -1,1 +1,5 @@
 listview vs column
+alert dialogue
+listview mai padding kaisay band kartay
+
+make todo application
