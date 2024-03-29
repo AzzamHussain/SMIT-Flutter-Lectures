@@ -3,3 +3,26 @@ alert dialogue
 listview mai padding kaisay band kartay
 
 make todo application
+
+
+navigator.push agli screen par janay k liye
+navigator.pop wapas pichli screenpar anay k liye
+push replacement application close hojati hay back nh hota ,push replacement se root nh milta 
+suppose three states hay .push se jab agay jaega ,agay janay k bad dosri state par jb push replacement lagakar back karonga 
+filename may underscore use karna hay
+gesture detector
+home screen may 
+shrinkwrap 
+physics :NeverScrollablePhysics()
+Expanded widget 
+flex 2
+video no 17
+listviewko column k andar kistarah use kia jaega
+snackbar
+fluttertoast pkg ( pub.dev flutter k tamam pkgs is websites par milegay )
+
+appBar: appBar(Text:)
+
+copy kar k pubspec mai direct paste dependancies may 
+ontap() fluttertoast.showToast mai copy paste    
+bottom navigationbar   
